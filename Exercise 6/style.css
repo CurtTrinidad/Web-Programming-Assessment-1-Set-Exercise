@@ -1,0 +1,103 @@
+/* Full page styling */
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg, #f4f7fb, #dbe7f7);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1d2b45;
+}
+
+/* Main calculator box */
+.calcu-cont {
+    background-color: whitesmoke;
+    padding: 30px;
+    border-radius: 16px;
+    border-top: 6px solid #003b8e;
+    box-shadow: 0 12px 30px rgba(0, 59, 142, 0.15);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+/* Main title */
+.calcu-cont h1 {
+    margin-bottom: 10px;
+    font-size: 32px;
+    color: #003b8e;
+}
+
+/* Subtitle text */
+.subt {
+    margin-bottom: 25px;
+    font-size: 15px;
+    color: #4b5f7d;
+}
+
+/* Input section spacing */
+.inp {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Label styling */
+.inp label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #1d2b45;
+}
+
+/* Input box style */
+.inp input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #c9d6e8;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: whitesmoke;
+    color: #1d2b45;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Focus effect when typing */
+.inp input:focus {
+    border-color: #00a651;
+    box-shadow: 0 0 0 4px rgba(0, 166, 81, 0.18);
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #003b8e;
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #002b6b;
+    transform: translateY(-2px);
+}
+
+/* Click effect */
+button:active {
+    transform: translateY(0);
+}
+
+/* Result text */
+#totalCost {
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #d71920;
+}
