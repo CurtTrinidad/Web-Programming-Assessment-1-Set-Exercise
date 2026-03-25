@@ -1,0 +1,93 @@
+/* Styles for the main headings inside the page */
+h1 {
+    color: #D2691E;
+    text-align: center; /* centers the text */
+    margin: 20px; /* adds space around the heading */
+    font-size: 25px; /* sets the text size */
+}
+
+/* styles for section subheadings */
+h2 {
+    color: #8B4513;
+    margin-top: 10px; /* adds space above */
+    font-size: 25px;
+}
+
+/* styles for paragraph text */
+p {
+    color: #3E2C23;
+    text-align: justify; /* aligns text evenly on both sides */
+    margin-top: 2px; /* small space above paragraph */
+    font-size: 18px;
+}
+
+/* styles for list items */
+li {
+    color: #3E2C23;
+    margin-bottom: 8px; /* space between list items */
+    font-size: 18px;
+}
+
+/* styles for the whole webpage background */
+body {
+    background-color: #FFF8E7;
+    color: #3E2C23;
+}
+
+/* style for the top header section */
+header {
+    background-color: #D2691E;
+    padding: 5px; /* space inside the header */
+}
+
+/* special style for h1 inside the header */
+header h1 {
+    color: #FFF8E7;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* style for recipe box */
+.recipe {
+    background-color: #FFE5B4;
+    padding: 20px; /* space inside box */
+    margin: 20px; /* space outside box */
+    border-radius: 8px; /* makes the border corners rounded */
+}
+
+/* style for ingredient box */
+.ingredients {
+    background-color: #FFE5B4;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+/* style for method box */
+.method {
+    background-color: #FFE5B4;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+/* style for footer section at the bottom */
+footer {
+    background-color: #D2691E;
+    padding: 2px;
+}
+
+/* style for h2 inside the footer */
+footer h2 {
+    color: #FFF8E7;
+    text-align: right;
+    font-size: 14px;
+    margin-right: 20px; /* space from the right edge */
+}
+
+
+/* style for the image position */
+img{
+        margin: 20px 0px 0px 545px; /* moves image right and adds space on top */
+    }
