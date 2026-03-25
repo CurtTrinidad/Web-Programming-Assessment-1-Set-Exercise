@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> 5th Exe Embed Video </title>
+
+    <style>
+
+        body{
+            margin: 0;
+            height: 100vh; /* "vh" stands for viewport height, it bases on the height of the browser window. 1vh = 9px, 100vh = 900px */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #02030a;
+            background-image: url("bg-pic.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        /* Dark overlay on background */
+        body::before{
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,20,0.65);
+            z-index: -1;
+        }
+
+        video {
+            width: 70%;
+            max-width: 900px;
+            height: auto;
+        }
+
+        
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Local hosted video with controls, looping, and a poster image -->
+    <video controls loop poster="poster.jpg">
+
+        <!-- Local video file -->
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+
+    </video>
+
+</body>
+
+</html>
