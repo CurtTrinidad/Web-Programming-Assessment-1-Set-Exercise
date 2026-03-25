@@ -10,6 +10,41 @@ body {
     color: #1d2b45;
 }
 
+.page-wrap {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.top-header {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.logo-wrap {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 59, 142, 0.18);
+    border-radius: 16px;
+    padding: 14px 20px;
+    box-shadow: 0 8px 20px rgba(0, 59, 142, 0.12);
+    text-align: center;
+}
+
+/* English ADNOC */
+.logo-en {
+    margin: 0;
+    font-size: 30px;
+    color: #003b8e;
+    letter-spacing: 2px;
+}
+
+/* Arabic ADNOC */
+.logo-ar {
+    margin: 6px 0 0 0;
+    font-size: 26px;
+    color: #00843d;
+}
+
 /* Main calculator box */
 .calcu-cont {
     background-color: whitesmoke;
@@ -19,12 +54,13 @@ body {
     border-bottom: 6px solid #003b8e;
     box-shadow: 0 12px 30px rgba(0, 59, 142, 0.15);
     width: 100%;
-    max-width: 420px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 /* Main title */
 .calcu-cont h1 {
+    margin-top: 0;
     margin-bottom: 10px;
     font-size: 32px;
     color: #003b8e;
