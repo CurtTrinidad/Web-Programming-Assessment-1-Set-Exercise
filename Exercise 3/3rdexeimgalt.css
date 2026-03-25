@@ -1,0 +1,79 @@
+/* Page styling for the dark ocean theme */
+body {
+    margin: 100px auto;
+    width: max-content;
+    background-color: #0a0f2c;
+    color: #e6f1ff;
+    text-align: center;
+}
+
+/* Dark overlay effect */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Container for each image */
+.card {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 25px;
+    border: 4px solid black;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+    text-align: center;
+    width: 420px;
+    padding: 15px;
+}
+
+/* Image styling with css filters */
+.card img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    filter: brightness(85%) contrast(110%) saturate(115%);
+}
+
+.card img:hover {
+  transform: scale(1.05);
+  filter: brightness(100%) contrast(120%) saturate(120%);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Copyright text under each image */
+.license {
+    font-size: 13px;
+  color: #a0c4ff;
+  margin-top: 12px;
+  line-height: 1.4;
+}
+
+/* License link style */
+.license a {
+  color: #f4d35e;
+  text-decoration: none;
+}
+
+/* License link style */
+.license a:hover {
+  text-decoration: underline;
+}
