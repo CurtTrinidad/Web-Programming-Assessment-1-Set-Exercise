@@ -16,6 +16,7 @@ body {
     padding: 30px;
     border-radius: 16px;
     border-top: 6px solid #003b8e;
+    border-bottom: 6px solid #003b8e;
     box-shadow: 0 12px 30px rgba(0, 59, 142, 0.15);
     width: 100%;
     max-width: 420px;
