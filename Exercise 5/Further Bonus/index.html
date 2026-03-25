@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Further Bonus 5th Exe </title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Background Video -->
+    <video autoplay muted loop id="bg-video">
+
+        <source src="bg-video.mp4" type="video/mp4">
+
+    </video>
+    
+    <header>
+
+        <h1> Sample Bank 2</h1>
+        
+    </header>
+
+    <!-- Main layout split into two columns -->
+    <main class="layout">
+
+        <!-- Soundboard panel that shows 9 samples at a time -->
+        <section class="sb-panel">
+
+                <h2> Soundboard </h2>
+
+                <!-- Container where sample buttons are added using JavaScript -->
+                <div id="sb" class="sb"></div>
+
+                <!-- Nav arrows for switching between sample pages -->
+                <div class="nav-con">
+
+                    <button id="leftArrow" class="nav-btn">⟵</button>
+                    <button id="rightArrow" class="nav-btn">⟶</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Text to speech panel -->
+        <aside class="tts-panel">
+
+            <h2> Text to Speech </h2>
+
+            <!-- Where users can type any text to be spoken -->
+            <textarea id="ttsInput" placeholder="Enter text here"></textarea>
+
+            <!-- Button used to convert text into speech -->
+            <button id="speakBtn">Press to Speak</button>
+
+        </aside>
+
+    </main>
+
+    <!-- Links the external JavaScript -->
+    <script src="index.js"></script>
+
+</body>
+</html>
