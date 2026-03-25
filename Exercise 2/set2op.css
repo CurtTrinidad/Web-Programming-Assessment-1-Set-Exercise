@@ -1,0 +1,206 @@
+/* Styles the whole page */
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #0B1F3A;
+    color: #F8F1E5;
+    text-align: center;
+    background-image: url("https://www.transparenttextures.com/patterns/old-map.png");
+}
+
+/* Main title styling */
+h1 {
+    font-family: 'Pirata One', cursive;
+    font-size: 75px;
+    color: whitesmoke;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+/* Top header section */
+header {
+    background-color: #D62828;
+    padding: 20px;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Class used for navbar container */
+.pages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    margin-top: 7px;
+    text-transform: uppercase;
+}
+
+/* First navbar row */
+.nav-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+/* Second nav bar row */
+.nav-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+/* Styles all nav links */
+.pages a {
+    text-decoration: none;
+    color: #e6f2ff;
+    background-color: #c20000;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+/* Hover effects */
+.pages a:hover {
+    color: #0B1F3A;
+    background-color: #f5d27a;
+}
+
+/* One link styled as a button */
+.button-link {
+    background-color: #f5d27a;
+    color: #0B1F3A;
+    font-weight: bold;
+}
+
+.button-link:hover {
+    background-color: #fff3c4;
+    color: black;
+}
+
+h2, h3 {
+    color: #D62828;
+}
+
+h4 {
+    color: #D62828;
+    text-align: right;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #2E1F1F;
+    text-align: center;
+}
+
+/* Styles text inside the content sections */
+.plots p,
+.infor p,
+.casts p,
+.character p,
+.reviews p,
+.plots li,
+.infor li,
+.casts li,
+.character li,
+.reviews li {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #2E1F1F;
+}
+
+/* Multiple classes used for styling sections */
+.home,
+.plots,
+.infor,
+.casts,
+.character,
+.reviews {
+    width: 70%;
+    margin: 120px auto;
+    padding: 40px;
+    background: linear-gradient(#F5E6C8, #EAD3A7); 
+    color: #3B2F2F;
+    border: 8px solid #8B5A2B;
+    border-radius: 5px;
+    box-shadow:
+        0 0 30px rgba(0,0,0,0.6),   
+        inset 0 0 40px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+.plots h2,
+.infor h2,
+.casts h2,
+.character h2,
+.reviews h2,
+.home h2,
+.home h3 {
+    text-align: center;
+    font-family: 'Pirata One', cursive;
+    font-size: 45px;
+    color: #4A2C2A;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.plots h2::before,
+.infor h2::before,
+.casts h2::before,
+.character h2::before,
+.reviews h2::before 
+.home h2::before {
+    content: "WANTED";
+    display: block;
+    font-size: 60px;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+    color: #5A3A2A;
+}
+
+
+.infor ul,
+.casts ul,
+.reviews ul {
+    padding-left: 20px;
+}
+
+
+.casts h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.character h3 {
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    line-height: 2.0;
+}
+
+.bottom {
+    background-color: #D62828;
+    padding: 6px;
+    margin-top: 40px;
+}
+
+.bounty-text {
+    color: #F5E6C8;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+
+.bottom p{
+    color: #f5e6c8;
+    text-align: center;
+}
+
+h4 {
+    color: whitesmoke;
+    text-align: center;
+}
