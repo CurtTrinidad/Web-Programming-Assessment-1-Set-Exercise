@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 60px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    color: #f0f0ff;
+    min-height: 100vh; /* Makes the page take full height of the screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centers the content on the page */
+    text-align: center;
+    overflow: hidden; /* Prevents scrolling so all samples stay on one page */
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(5,5,20,0.6); /* Dark overlay above the bg video */
+    z-index: -1;
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes the bg video cover the whole webpage */
+    z-index: -2;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #ff3cac;
+    text-shadow: 0 6px 30px #00e5ff; /* Glowing effect to the heading */
+}
+
+p {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #ff3cac;
+    text-shadow: 0 6px 30px #00e5ff;
+}
+
+.soundboard {
+    display: grid;
+    grid-template-columns: repeat(3, 220px); /* Arranges the samples to 3 column grid */
+    gap: 25px;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(20,20,50,0.35); /* Background box for the soundboard */
+    backdrop-filter: blur(3px);
+    box-shadow: 
+        0 0 20px rgba(255,60,172,0.3),
+        0 0 25px rgba(0,229,255,0.2);
+}
+
+.sample {
+    padding: 30px;
+    border: none;
+    border-radius: 12px;
+    background: rgba(25,25,60,0.85); /* Default button background color */
+    color: #f0f0ff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Changes the background and text color when odd buttons are hovered over */
+.sample:nth-child(odd):hover{
+    color: #00e5ff;
+    background-color: rgba(255, 60, 172, 0.45);
+}
+
+/* Changes the background and text color of even buttons */
+.sample:nth-child(even):hover {
+    color: #ff3cac;
+    background-color: rgba(0, 229, 255, 0.45);
+}
