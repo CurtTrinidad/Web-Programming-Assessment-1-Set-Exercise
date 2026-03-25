@@ -1,0 +1,150 @@
+/* =========================
+   Digi Fest 2022 - Styles
+   Requirements:
+   - Heading font: Tahoma, 700
+   - Body font: Arial, 400
+   - Header: #17072b
+   - Sidebar: #172d67
+   - Footer: #8c15e9
+   - Text: #000000 and #FFFFFF
+   ========================= */
+
+
+body {
+   margin: 0;
+   font-family: Arial;
+   font-weight: 400;
+   color: #000000;
+   background: #FFFFFF;
+}
+
+.site-header {
+   background: #17072b;
+   color: #FFFFFF;
+   text-align: center;
+   padding: 28px 16px 22px;
+}
+
+.site-header h1 {
+   margin: 0 0 18px;
+
+   /*=== Heading Font ===*/
+   font-family: Tahoma; 
+
+   /*=== Heading Weight===*/
+   font-weight: 700;
+   font-size: 52px;
+   letter-spacing: 1px;
+   text-decoration: underline;
+   text-underline-offset: 6px;
+}
+
+/*=== Navigation ===*/
+.site-nav {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   flex-wrap: wrap;
+}
+
+.site-nav a {
+   margin: 13px;
+   color: #FFFFFF;
+   font-size: 26px;
+   text-decoration: none;
+}
+
+/*=== Main Wrapper===*/
+.page {
+   padding: 0;
+}
+
+/*=== 2-Column Layout ===*/
+.content {
+   display: grid;
+   grid-template-columns: 1fr 420px; /*=== Right sidebar fixed ===*/
+   gap: 22px;
+
+   padding: 18px 22px 0;
+   max-width: 1500px;
+   margin: 0 auto;
+}
+
+/*=== Welcome Content ===*/
+.welcome h2 {
+   font-weight: 700;
+   font-size: 40px;
+   margin: 0 0 14px;
+   text-decoration: underline;
+   text-underline-offset: 6px;
+}
+
+.welcome p {
+   line-height: 1.6;
+   font-size: 18px;
+   margin: 0 0 18px;
+   max-width: 85ch;
+}
+
+.welcome img {
+   width: 100%;
+   height: 310px;
+   object-fit: cover; /*=== Makes the image like a banner ===*/
+   display: block;
+}
+
+/*=== Line Up (right) ===*/
+.lineup {
+   background: #172d67;
+   color: #FFFFFF;
+   padding: 22px;
+}
+
+.lineup h2 {
+   font-weight: 700;
+   font-size: 34px;
+   margin: 0 0 16px;
+   text-decoration: underline;
+   text-underline-offset: 7px;
+}
+
+/*=== Makes the list align under "line up" (removes the indentation ===*/
+.lineup ul {
+   list-style: none; /*=== Removes the dot ===*/
+   margin: 0 0 20px;
+   padding: 0;
+   margin: 0;
+}
+
+.lineup li {
+   margin: 25px 0;
+}
+
+.lineup li::before {
+   content: "-"; /*=== Replaces the dot with a dash ===*/
+}
+
+/*=== Two images at bottom, square ===*/
+.lineup-images {
+   display: grid; /*=== "grid" makes 2 columns ===*/
+   grid-template-columns: 1fr 1fr; /*=== Creates a equal column for the two images ===*/
+   gap: 18px; /*=== Gives a gap between the images ===*/
+   margin-top: 18px;
+}
+
+.lineup-images img{
+   width: 100%; /*=== Fills the width of the column ===*/
+}
+
+.site-footer {
+   background: #8c15e9;
+   color: #FFFFFF;
+   text-align: center;
+   padding: 16px 10px;
+   margin-top: 44px;
+}
+
+.site-footer p {
+   margin: 0;
+   font-size: 18px;
+}
