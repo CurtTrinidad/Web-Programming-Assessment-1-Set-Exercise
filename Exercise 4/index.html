@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure of a Webpage</title>
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+
+        <!-- Heading -->
+        <h1> DIGI FEST 2022 </h1>
+        
+        <!-- Navigation Menu -->
+        <nav class="site-nav"> 
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#what">What's On</a>
+            <a href="#contact">Contact</a>
+            <a href="#ticket">Tickets</a>
+
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="home" class="page">
+
+        <!-- 2-column layout: Welcome (left) + Line Up sidebar (right) -->
+        <section class="content">
+
+            <!-- Welcome Content -->
+            <article class="welcome" id="about">
+
+                <h2> Welcome </h2>
+
+                <p> Digi Fest is a celebration of digital and technology in the city of Cardiff. This year, we are 
+                    celebrating ‘collaboration’, so come and find out about the latest collaborations that are 
+                    happening in this historic and innovative city. They promise an educational and inspirational 
+                    packed programmed for all. </p>
+
+                <!-- Main image under Welcome text -->
+                <img 
+                class="welcome"
+                src="images/image_1.jpg"
+                alt="Close up image of a computer screen"
+                >
+
+            </article>
+
+            <!-- Lineup Content -->
+            <aside class="lineup" id="what">
+
+                <h2> Line Up </h2>
+
+                <ul>
+
+                    <li> Introduction to HTML and CSS </li>
+                    <li> Links and Images </li>
+                    <li> Page Layout </li>
+
+                </ul>
+
+                <!-- 2 images under the text -->
+                <div class="lineup-images">
+                    <img
+                    src="images/image_2.jpg"
+                    alt="Electronic circuit board closeup"
+                    >
+
+                    <img
+                    src="images/image_3.jpg"
+                    alt="Technology circuit pattern"
+                    >
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer" id="contact">
+
+        <p> © 2022 DigiFest Ltd. </p>
+
+    </footer>
+
+</body>
+</html>
