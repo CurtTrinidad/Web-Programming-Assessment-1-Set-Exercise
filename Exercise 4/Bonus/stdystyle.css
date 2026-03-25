@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', serif; /* Font style for the whole webpage */
+    background-color: rgba(10,14,28,1); /* Dark bg */
+    color: rgba(210,215,235,0.85);
+}
+
+/* Styles the header */
+.sp-header {
+    background-color: rgba(20,26,48,0.95);
+    padding: 20px 30px; 
+    align-items: center;
+    display: flex; /* Places the logo, title, and button in one row */
+    justify-content: space-between;
+}
+
+.header-top {
+    display: flex; /* Aligns the logo and heading side by side */
+    align-items: center;
+    gap:15px;
+}
+
+/* Size of the logo */
+.logo {
+    width: 50px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 7vh;
+    color: rgba(235,240,255,0.95);
+}
+
+/* Nav Bar styling */
+.sp-nav {
+    font-size: 3vh;
+    padding: 14px 13vh;
+    background-color: rgba(25,32,60,0.90);
+}
+
+.sp-nav a {
+    text-decoration: none;
+    margin-right: 25px;
+    color: rgba(185,195,255,0.85);
+    font-weight: bold;
+}
+
+/* Hover Effect */
+.sp-nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: rgba(255,255,255,1);
+}
+
+.btn {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(70,90,200,0.8); /* Styles the button required by the task */
+    color: rgba(240,245,255,0.95);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(110,130,255,0.9);
+    box-shadow:0 0 4px rgba(120,150,255,0.7);
+}
+
+.sp-main {
+    display: flex; /* Splits main content into columns */
+    justify-content: center;
+    gap: 17vh;
+    padding: 70px;
+    padding-bottom: 40px;
+    margin-top: 25px;
+}
+
+/* Styles each content box */
+.task,
+.sched,
+.prog {
+    background-color: rgba(30,36,64,0.65); 
+    padding: 23px;
+    border-radius: 30px;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.task:hover,
+.sched:hover,
+.prog:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+h2 {
+    text-align: center;
+    color: rgba(200,210,255,0.90);
+}
+
+/* Styles the demo items inside each section */
+.tl,
+.demo,
+.pro {
+    background-color: rgba(40,46,80,0.55);
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.tl:hover,
+.demo:hover,
+.pro:hover {
+    background-color: rgba(70,85,150,0.55);
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(120,140,255,0.5);
+}
+
+.wireframe {
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgba(20,24,50,0.65);
+    margin: 40px auto 80px auto;
+    width: 55%;
+
+}
+
+.wireframe h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+/* Image size of the wireframe */
+.wireframe img {
+    width: 500px;
+    margin-top: 3px;
+    border-radius: 12px;
+}
+
+.wireframe img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(120,140,255,0.6);
+}
+
+.sp-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(15,18,35,0.95);
+    color: rgba(170,180,220,0.75);
+    box-shadow: 0 0 20px rgba(120,140,255,0.6);
+}
+
+.sp-footer p {
+    margin-top: 5px;
+    text-shadow: 0 0 10px rgba(140,160,255,0.8);
+}
