@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6th Exe Bonus RGB</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Main game container-->
+    <div class="game-cont">
+
+        <!-- Main Title -->
+        <h1> RGB Colour Guessing Game </h1>
+
+        <!-- Instructions for the game -->
+        <p class="subt">Click the colour that matches the RGB value shown below.</p>
+
+        <!-- Shows the score and lives of the player -->
+        <div class="game-info">
+
+            <p id="score">Score: 0</p>
+            <p id="lives">Lives: 3</p>
+
+        </div>
+
+        <!-- The rgb value the player needs to guess -->
+        <div class="target-box">
+
+            <p>Guess this colour:</p>
+            <h2 id="rgbValue">rgb(0, 0, 0)</h2>
+
+        </div>
+        
+        <!-- Message shown after the player picks a colour -->
+        <p id="mess">Choose a colour to begin.</p>
+
+        <!-- Container for the colour options -->
+        <div class="colour-options" id="colourOptions"></div> <!-- Buttons will be created by JS -->
+
+        <!-- Restart button for when the game is over -->
+        <button id="restartBtn">Play Again</button> <!-- Will appear only when the game is over -->
+
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
