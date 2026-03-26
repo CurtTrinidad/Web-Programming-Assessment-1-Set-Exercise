@@ -1,0 +1,149 @@
+/* Style full page */
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg, #1b2230, #243046, #2d3a52);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #edf2f7;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dark Overlay for background */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(18, 24, 36, 0.38);
+    z-index: -1;
+}
+
+/* Game card */
+.game-cont {
+    width: 100%;
+    max-width: 650px;
+    background: rgba(34, 42, 58, 0.58);
+    backdrop-filter: blur(8px);
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 12px 28px rgba(10, 14, 24, 0.28);
+    border: 1px solid rgba(220, 228, 240, 0.14);
+    text-align: center;
+}
+
+/* Heading */
+.game-cont h1 {
+    font-size: 32px;
+    color: #d8c4ff;
+    margin-bottom: 8px;
+}
+
+/* Subt text */
+.subt {
+    font-size: 15px;
+    color: #c7d1df;
+    margin-bottom: 20px;
+}
+
+/* Score and lives sect */
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 20px;
+    background: rgba(24, 31, 45, 0.48);
+    border: 1px solid rgba(220, 228, 240, 0.10);
+    border-radius: 12px;
+    padding: 12px 16px;
+}
+
+/* Score and lives text */
+.game-info p {
+    font-size: 17px;
+    font-weight: bold;
+    color: #edf2f7;
+    margin: 0;
+}
+
+.target-box {
+    background: rgba(24, 31, 45, 0.45);
+    border: 1px solid rgba(220, 228, 240, 0.10);
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 18px;
+}
+
+/* Text above rgb val */
+.target-box p {
+    font-size: 14px;
+    color: #b8c4d6;
+    margin-bottom: 6px;
+}
+
+/* RGB val text */
+#rgbValue {
+    font-size: 27px;
+    color: #8fd3ff;
+    margin: 0;
+}
+
+#mess {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffd58f;
+    min-height: 22px;
+}
+
+/* Grid colour buttons */
+.colour-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+/* Each colour option button */
+.colour-btn {
+    height: 95px;
+    border: 2px solid rgba(220, 228, 240, 0.10);
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+/* Hover effect for the colour buttons */
+.colour-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(12, 18, 30, 0.28);
+    border-color: rgba(143, 211, 255, 0.40);
+
+}
+
+/* Restart button */
+#restartBtn {
+    display: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background: rgba(124, 92, 255, 0.78);
+    color: white;
+    cursor: pointer;
+}
+
+/* Hover effect for restart button */
+#restartBtn:hover {
+    background: rgba(143, 110, 255, 0.9);
+    transform: translateY(-2px);
+}
+
+/* Click effect for restart button */
+#restartBtn:active {
+    transform: translateY(0);
+}
